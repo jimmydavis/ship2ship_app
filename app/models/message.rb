@@ -1,8 +1,3 @@
 class Messages < ActiveRecord::Base
-  respond_to :json
-
-  def index
-
-    respond_with @messages
-  end
+  attr_accessible :title, :body, :is_read
 end
