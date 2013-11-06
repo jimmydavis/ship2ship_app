@@ -1,4 +1,6 @@
 Ship2shipApp::Application.routes.draw do
+
+  root_to: 'welcome#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
