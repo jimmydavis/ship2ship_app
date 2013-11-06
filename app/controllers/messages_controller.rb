@@ -1,7 +1,13 @@
 class MessagesController < ApplicationController
-
+  responds_to :json
   def index
     @messages = Message.all
-    render :json => @messages
+    responds_with @messages
   end
+
+  def create
+    params
+    binding.pry
+  end
+
 end
